@@ -21,6 +21,12 @@ export default function GraduationPoint() {
         const average = points.average * 3;
         console.log(points);
         setFinalPoint((examAverage + average) / 10 + points.priority);
+        if (finalPoint >= 5) {
+            alert("Bạn đã tốt nghiệp!");
+        }
+        else {
+            alert("Bạn đã trượt =))))")
+        }
     }
 
     return (
