@@ -21,12 +21,6 @@ export default function GraduationPoint() {
         const average = points.average * 3;
         console.log(points);
         setFinalPoint((examAverage + average) / 10 + points.priority);
-        if (finalPoint >= 5) {
-            alert("Bạn đã tốt nghiệp!");
-        }
-        else {
-            alert("Bạn đã trượt =))))")
-        }
     }
 
     return (
@@ -87,12 +81,14 @@ export default function GraduationPoint() {
                     name = 'priority'
                     onChange = {handleChange}   
                 />
+                <label>Nhớ nhập đúng nhá!</label>
                 <input
                     type = 'submit'
                     value = 'Tính điểm'
                 />
             </form>
             <p>{finalPoint}</p>
+            <p>Bạn đã {(finalPoint >= 5 ? 'tốt nghiệp' : 'trượt')}</p>
         </div>
     );
 }
