@@ -2,6 +2,15 @@
   text-align: center;
 }
 
+ul {
+  list-style: none;
+}
+
+li a {
+  text-decoration: none;
+  color: inherit;
+}
+
 label {
   display: block;
 }
