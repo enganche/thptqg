@@ -1,4 +1,4 @@
-# Thì ra hồi đó mình có code app nàp
+# Thì ra hồi đó mình có code app này
 
 # Getting Started with Create React App
 
